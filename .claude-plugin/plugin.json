@@ -1,6 +1,6 @@
 {
   "name": "ai-zephyr-tester",
-  "description": "A greeting plugin to learn the basics",
+  "description": "Uses Zephyr Scale to fetch and run test cases in a browser using Playwright.",
   "version": "1.0.0",
   "author": {
     "name": "Brandon Alexander"
