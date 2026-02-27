@@ -1,0 +1,6 @@
+# Local credentials and API keys — never commit these
+.claude/
+config.json
+
+# Runtime artifacts from Playwright MCP
+.playwright-mcp/

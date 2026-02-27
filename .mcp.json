@@ -1,0 +1,14 @@
+{
+  "playwright": {
+    "command": "npx",
+    "args": ["@playwright/mcp@latest"]
+  },
+  "zephyr": {
+    "type": "stdio",
+    "command": "cmd",
+    "args": ["/c", "npx", "-y", "@smartbear/mcp@latest"],
+    "env": {
+      "ZEPHYR_API_TOKEN": "${env:ZEPHYR_API_TOKEN}"
+    }
+  }
+}
