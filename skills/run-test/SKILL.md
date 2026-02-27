@@ -20,7 +20,7 @@ The following input parameters are required:
 1. Read `config.json` to resolve the environment URL and credentials (username/password).
 2. Run the get-steps script directly via Bash — **do not use the `ai-zephyr-tester:get-zephyr-test-steps` subagent** (it can hallucinate steps) and **do not use Zephyr MCP tools** (they lack a test steps endpoint):
    ```
-   powershell -File "C:/Users/BrandonAlexander/source/AbsenceSoftQA-plugin/skills/get-zephyr-test-steps/get-steps.ps1" -TestID "<TestID>"
+   powershell -File "C:/Users/BrandonAlexander/source/ai-zephyr-tester/skills/get-zephyr-test-steps/get-steps.ps1" "<TestID>"
    ```
    The script reads `ZEPHYR_API_TOKEN` from the environment (already set). Its output may contain HTML entities (`&gt;`, `&nbsp;`, etc.) — decode them before displaying.
 3. Display the returned steps to the user as a numbered list showing each step's description, test data, and expected result.
