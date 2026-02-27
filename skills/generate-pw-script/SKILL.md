@@ -16,6 +16,8 @@ This skill takes a Zephyr Scale test case ID, fetches the test steps using the `
 
 2.  **Fetch Test Steps**: Call the `get-zephyr-test-steps` skill with the Test ID to retrieve the cleaned test steps as a JSON object with a `steps` array.
 
+3. **Outline the Steps**: Return a brief description of each step to the user for confirmation before generating the script.
+
 3.  **Generate Script**: For each step in the JSON output:
     - Use `description` to create a comment in the script.
     - Use `testData` and `expectedResult` to generate Playwright actions and assertions.
