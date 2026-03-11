@@ -1,12 +1,12 @@
 {
   "playwright": {
     "command": "npx",
-    "args": ["@playwright/mcp@latest"]
+    "args": ["@playwright/mcp@0.0.68"]
   },
   "zephyr": {
     "type": "stdio",
     "command": "cmd",
-    "args": ["/c", "npx", "-y", "@smartbear/mcp@latest"],
+    "args": ["/c", "npx", "-y", "@smartbear/mcp@0.14.1"],
     "env": {
       "ZEPHYR_API_TOKEN": "${env:ZEPHYR_API_TOKEN}"
     }

@@ -49,5 +49,6 @@ try:
     print(json.dumps({"steps": cleaned_steps}, indent=4))
 
 except json.JSONDecodeError:
+    sys.stderr.write("Error: invalid JSON received from Zephyr API\n")
     sys.exit(1)
 '

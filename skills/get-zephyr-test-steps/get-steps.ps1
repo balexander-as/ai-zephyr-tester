@@ -34,14 +34,14 @@ try {
 
     $data = $response.Content | ConvertFrom-Json
 
-    $cleanedSteps = @()
+    $cleanedSteps = [System.Collections.Generic.List[PSCustomObject]]::new()
     foreach ($step in $data.values) {
         $cleanedStep = [PSCustomObject]@{
             description    = ($step.inline.description -replace '<[^>]+>')
             testData       = ($step.inline.testData -replace '<[^>]+>')
             expectedResult = ($step.inline.expectedResult -replace '<[^>]+>')
         }
-        $cleanedSteps += $cleanedStep
+        $cleanedSteps.Add($cleanedStep)
     }
 
     $output = @{
